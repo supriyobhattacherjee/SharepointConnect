@@ -10,7 +10,7 @@ private async Task GetClientContextWithAccessToken1(string targetUrl)
                 webRequestEventArgs.WebRequestExecutor.RequestHeaders["Authorization"] =
                     "Bearer " + accessToken;
             };
-        List list = clientContext.Web.Lists.GetByTitle("BeoneTestDocLibrary");
+        List list = clientContext.Web.Lists.GetByTitle("TestDocumentLibrary");
         clientContext.Load(list);
         clientContext.ExecuteQuery();
     }
